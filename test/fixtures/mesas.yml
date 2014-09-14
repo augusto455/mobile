@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  c_mesa: MyString
+  c_user: MyString
+  n_user: MyString
+
+two:
+  c_mesa: MyString
+  c_user: MyString
+  n_user: MyString

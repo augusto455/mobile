@@ -1,0 +1,29 @@
+<%= form_for(@mesa) do |f| %>
+  <% if @mesa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mesa.errors.count, "error") %> prohibited this mesa from being saved:</h2>
+
+      <ul>
+      <% @mesa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :c_mesa %><br>
+    <%= f.text_field :c_mesa %>
+  </div>
+  <div class="field">
+    <%= f.label :c_user %><br>
+    <%= f.text_field :c_user %>
+  </div>
+  <div class="field">
+    <%= f.label :n_user %><br>
+    <%= f.text_field :n_user %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

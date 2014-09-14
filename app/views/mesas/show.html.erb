@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>C mesa:</strong>
+  <%= @mesa.c_mesa %>
+</p>
+
+<p>
+  <strong>C user:</strong>
+  <%= @mesa.c_user %>
+</p>
+
+<p>
+  <strong>N user:</strong>
+  <%= @mesa.n_user %>
+</p>
+
+<%= link_to 'Edit', edit_mesa_path(@mesa) %> |
+<%= link_to 'Back', mesas_path %>
